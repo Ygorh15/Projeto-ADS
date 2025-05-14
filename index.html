@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Programação Gratuitos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'], // Define Inter como a fonte padrão
+                    },
+                    colors: {
+                        'azul-curso': '#007bff',
+                        'azul-curso-hover': '#0056b3',
+                        'fundo-claro': '#f8f9fa',
+                        'fundo-escuro': '#343a40',
+                        'texto-claro': '#f8f9fa',
+                        'texto-escuro': '#212529',
+                        'borda-cartao': '#dee2e6',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados adicionais, se necessário */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .course-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        /* Estilo para a barra de rolagem */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="bg-fundo-claro text-texto-escuro antialiased">
+
+    <header class="bg-fundo-escuro text-texto-claro shadow-lg">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold">Explore Cursos de Programação Gratuitos</h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-300">Sua jornada no mundo da tecnologia começa aqui. Encontre os melhores recursos para aprender e evoluir!</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section id="cursos-lista">
+            <h2 class="text-3xl font-semibold text-center mb-10 text-gray-800">Plataformas e Cursos Recomendados</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-borda-cartao">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/007bff/white?text=freeCodeCamp&font=inter" alt="Logo freeCodeCamp">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-azul-curso">freeCodeCamp</h3>
+                        <p class="text-gray-700 mb-4 text-sm">
+                            Aprenda desenvolvimento web completo (HTML, CSS, JavaScript, Bancos de Dados, Node.js, React e mais) com projetos práticos e certificações gratuitas.
+                        </p>
+                        <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer" class="inline-block bg-azul-curso hover:bg-azul-curso-hover text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-300">
+                            Visitar freeCodeCamp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-borda-cartao">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/28a745/white?text=Codecademy&font=inter" alt="Logo Codecademy">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-green-600">Codecademy (Cursos Gratuitos)</h3>
+                        <p class="text-gray-700 mb-4 text-sm">
+                            Plataforma interativa para aprender linguagens como Python, JavaScript, HTML, CSS, SQL, Java e Ruby. Oferece uma boa quantidade de conteúdo gratuito.
+                        </p>
+                        <a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer" class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-300">
+                            Visitar Codecademy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-borda-cartao">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/ffc107/black?text=Khan+Academy&font=inter" alt="Logo Khan Academy">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-yellow-500">Khan Academy</h3>
+                        <p class="text-gray-700 mb-4 text-sm">
+                            Cursos introdutórios de lógica de programação, HTML, CSS, JavaScript e SQL. Ideal para iniciantes e mais jovens. Conteúdo em português.
+                        </p>
+                        <a href="https://pt.khanacademy.org/computing/computer-programming" target="_blank" rel="noopener noreferrer" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-300">
+                            Visitar Khan Academy
+                        </a>
+                    </div>
+                </div>
+
+                <div class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-borda-cartao">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/6f42c1/white?text=Rocketseat&font=inter" alt="Logo Rocketseat">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-purple-600">Rocketseat - Discover</h3>
+                        <p class="text-gray-700 mb-4 text-sm">
+                            Trilha de cursos gratuitos e em português para quem quer começar no desenvolvimento web com HTML, CSS, JavaScript, Git e outras ferramentas essenciais.
+                        </p>
+                        <a href="https://www.rocketseat.com.br/discover" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-300">
+                            Visitar Rocketseat
+                        </a>
+                    </div>
+                </div>
+
+                <div class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-borda-cartao">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/17a2b8/white?text=W3Schools&font=inter" alt="Logo W3Schools">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-cyan-600">W3Schools</h3>
+                        <p class="text-gray-700 mb-4 text-sm">
+                            Tutoriais e referências completas para HTML, CSS, JavaScript, Python, SQL, PHP e muito mais. Ótimo para consulta rápida e aprendizado prático.
+                        </p>
+                        <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-300">
+                            Visitar W3Schools
+                        </a>
+                    </div>
+                </div>
+
+                <div class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-borda-cartao">
+                     <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/fd7e14/white?text=MDN+Web+Docs&font=inter" alt="Logo MDN Web Docs">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-orange-500">MDN Web Docs (Mozilla)</h3>
+                        <p class="text-gray-700 mb-4 text-sm">
+                            Documentação detalhada e guias de aprendizado para tecnologias web (HTML, CSS, JavaScript) mantidos pela Mozilla. Excelente para aprofundamento.
+                        </p>
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Learn" target="_blank" rel="noopener noreferrer" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-300">
+                            Visitar MDN Learn
+                        </a>
+                    </div>
+                </div>
+
+                <div class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-borda-cartao">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/e83e8c/white?text=Fundação+Bradesco&font=inter" alt="Logo Fundação Bradesco">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-pink-600">Fundação Bradesco - Escola Virtual</h3>
+                        <p class="text-gray-700 mb-4 text-sm">
+                            Oferece cursos gratuitos em diversas áreas, incluindo introdução à programação, lógica, HTML/CSS/JS e Python.
+                        </p>
+                        <a href="https://www.ev.org.br/cursos/tecnologia-da-informacao-ti" target="_blank" rel="noopener noreferrer" class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-300">
+                            Visitar Escola Virtual (TI)
+                        </a>
+                    </div>
+                </div>
+
+                <div class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-borda-cartao">
+                    <img class="w-full h-48 object-cover" src="https://placehold.co/600x400/6610f2/white?text=Escola+Virtual.Gov&font=inter" alt="Logo Escola Virtual.Gov">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-indigo-600">Escola Virtual.Gov (EV.G)</h3>
+                        <p class="text-gray-700 mb-4 text-sm">
+                            Plataforma do Governo Federal com cursos gratuitos em diversas áreas, incluindo o curso "Aprendendo com Python".
+                        </p>
+                        <a href="https://www.escolavirtual.gov.br/catalogo" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-colors duration-300">
+                            Visitar Catálogo EV.G
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dicas" class="mt-16 p-8 bg-white rounded-xl shadow-lg border border-borda-cartao">
+            <h2 class="text-3xl font-semibold text-center mb-8 text-gray-800">Dicas para Aprender Programação</h2>
+            <ul class="list-disc list-inside space-y-3 text-gray-700">
+                <li><strong>Comece pelo básico:</strong> Entenda a lógica de programação antes de mergulhar em linguagens complexas.</li>
+                <li><strong>Escolha uma linguagem para iniciantes:</strong> Python ou JavaScript são ótimas opções.</li>
+                <li><strong>Pratique consistentemente:</strong> Dedique tempo regularmente para codificar e resolver problemas.</li>
+                <li><strong>Construa projetos:</strong> Aplique o que você aprende em projetos práticos para solidificar o conhecimento.</li>
+                <li><strong>Participe de comunidades:</strong> Interaja com outros desenvolvedores, tire dúvidas e compartilhe aprendizados.</li>
+                <li><strong>Não tenha medo de errar:</strong> Errar faz parte do processo. Aprenda com seus erros.</li>
+                <li><strong>Mantenha-se atualizado:</strong> A tecnologia está sempre evoluindo. Acompanhe as novidades.</li>
+                <li><strong>Ensine o que você aprendeu:</strong> Explicar conceitos para outros é uma ótima forma de fixar o conhecimento.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-fundo-escuro text-texto-claro mt-12 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2">&copy; <span id="currentYear"></span> Seu Site de Cursos de Programação. </p>
+            <p class="text-sm text-gray-400">
+                Criado para ajudar você a encontrar os melhores recursos gratuitos para aprender a programar.
+            </p>
+            <p class="text-xs text-gray-500 mt-2">
+                Lembre-se de verificar os termos de cada plataforma sobre a gratuidade e a emissão de certificados.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para funcionalidades dinâmicas (ex: ano atual no rodapé)
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Exemplo de como você poderia adicionar mais interatividade no futuro:
+        // const courseCards = document.querySelectorAll('.course-card');
+        // courseCards.forEach(card => {
+        //     card.addEventListener('mouseenter', () => {
+        //         // console.log('Mouse entrou no card:', card.querySelector('h3').textContent);
+        //     });
+        // });
+    </script>
+
+</body>
+</html>
